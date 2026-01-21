@@ -1,0 +1,18 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": ["s3:GetObject", "s3:PutObject"],
+      "Resource": [
+        "arn:aws:s3:::image-input-bucket-jhon/*",
+        "arn:aws:s3:::image-output-bucket-jhon/*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": ["logs:*"],
+      "Resource": "*"
+    }
+  ]
+}

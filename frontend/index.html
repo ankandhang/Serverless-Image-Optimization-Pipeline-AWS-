@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serverless Image Optimizer</title>
+  <link rel="stylesheet" href="style.css" />    
+</head>
+<body>
+  <div class="container">
+    <h1>Serverless Image Optimizer</h1>
+
+    <div class="upload-box">
+      <p>Select a high-resolution image to optimize</p>
+      <input type="file" id="imageFile" accept="image/*" />
+
+      <div class="options">
+        <label><input type="checkbox" value="1080p" checked /> 1080p</label>
+        <label><input type="checkbox" value="720p" checked /> 720p</label>
+        <label><input type="checkbox" value="480p" checked /> 480p</label>
+      </div>
+
+      <button onclick="uploadImage()">Optimize Now</button>
+    </div>
+
+    <div class="results" id="results"></div>
+
+    <footer>
+      Built with AWS S3, Lambda & API Gateway
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

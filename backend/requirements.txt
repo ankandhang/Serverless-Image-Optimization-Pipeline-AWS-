@@ -1,0 +1,9 @@
+Pillow
+
+This is a requirements file for a Python project, specifying that the Pillow library should be installed.
+
+mkdir python
+pip install pillow -t python/
+zip -r image-layer.zip python
+
+
